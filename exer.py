@@ -16,6 +16,7 @@ pass_label.place(x=50,y=90)
 pass_entry=Entry(root)
 pass_entry.place(x=250, y=90, width=100)
 
+# create function
 
 def login():
     usernames = ["Aisaacs", "Jsmith", "Bblack", "Karnold", "Lmorgan"]
@@ -31,6 +32,7 @@ def login():
     else:
         messagebox.showinfo("STATUS","Access not granted")
 
+# create button
 
 submit_button=Button(root,text="Submit", command=login)
 submit_button.place(x=250, y=150)
