@@ -7,10 +7,14 @@ root.geometry("600x200")
 root.config(bg="Skyblue")
 root.title("Malaysia Trip")
 
+# create labels
+
 amount_label=Label(root, text="Enter funds available for the trip: ", bg="skyblue")
 amount_label.place(x=20, y=50)
 amount = Entry(root,)
 amount.place(x=350, y=50)
+
+# create function
 
 def qual():
     funds =  amount.get()
@@ -22,6 +26,8 @@ def qual():
             messagebox.showinfo("Congratulations", "You qualify for the trip to Malaysia")
     except ValueError:
         messagebox.showerror("Error","Please insert a valid number.")
+
+# create button
 
 qualification=Button(root, text="check qualification", command=qual)
 qualification.place(x=200,y=100)
